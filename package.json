@@ -5,10 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js",
-    "postinstall": "ng build --prod",
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-prebuild": "echo This runs before Heroku installs dependencies.",
-    "heroku-postbuild": "ng build --prod", 
     "heroku-cleanup": "echo This runs after Heroku prunes and caches dependencies."
   },
   "author": "Alejandro H. Carrillo",
