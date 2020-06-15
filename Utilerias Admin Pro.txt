@@ -1,0 +1,107 @@
+﻿Para iniciar el backend 
+npm start
+
+nodemon 
+
+Instalacion de complementos para el Backend
+
+�Express?
+Express nos sirve para habilitar el ruteo REST de los repositorios 
+https://expressjs.com/es/starter/installing.html
+
+
+Base de datos MONGODB
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+
+Studio 3T
+https://robomongo.org/download
+
+
+Body Parser: para pasar paramertros from body
+https://github.com/expressjs/body-parser
+npm install body-parser --save
+
+
+instalar el node demon, para que reinicie el servidor npm cada que hay cambios
+nodemon app.js
+
+Mongoose provides a straight-forward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box.
+
+https://mongoosejs.com/docs/index.html
+
+Validador registro unico
+npm install mongoose-unique-validator --save
+
+Encriptar password
+https://github.com/dcodeIO/bcrypt.js
+npm install bcryptjs --save
+
+JWT: Json web Token
+
+npm install jsonwebtoken --save
+
+jwt.io
+
+File upload
+https://github.com/richardgirges/express-fileupload
+
+npm install --save express-fileupload
+
+Goggle sing in
+https://developers.google.com/identity/sign-in/web/devconsole-project
+https://developers.google.com/identity/sign-in/web/sign-in#before_you_begin
+
+Biblioteca o library de Goggle
+https://console.developers.google.com/apis/dashboard?project=lateral-scion-233821&supportedpurview=project
+
+npm install google-auth-library --save
+
+246495645277-lej43f1u8smboa1lluam2fdgkcbelco7.apps.googleusercontent.com
+qrpCwlNQfWZbrPvl3Rs4uuc9
+
+
+
+Lite Server
+https://github.com/johnpapa/lite-server
+npm install lite-server --save-dev
+
+Run Lite server
+npm run dev
+
+
+Levantar mongodb
+"C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath="c:\MongoDB\data\db"
+
+Levantar npm backend
+C:\Repos\backend-server>npm start
+
+# Sweet Alert
+https://github.com/t4t5/sweetalert
+npm install --save sweetalert
+
+# Express CORS
+https://github.com/expressjs/cors
+ npm install cors --save
+
+ https://enable-cors.org/server.html
+ https://enable-cors.org/server_expressjs.html
+
+
+# rxjs
+ npm install --save rxjs-compat
+
+
+ Charts
+ npm install --save chart.js
+
+
+ <!-- agregar el Sweet alert al index.html -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script> 
+
+
+
+----------------------------
+npm install --save rxjs-compat
+npm install --save sweetalert2 @sweetalert2/ngx-sweetalert2
+npm install --save chart.js
+
