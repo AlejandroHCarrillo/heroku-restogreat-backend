@@ -1,3 +1,10 @@
+// Heroku constants
+const cool = require('cool-ascii-faces');
+const express = require('express');
+const path = require('path');
+const PORT = process.env.PORT || 5000;
+// **************************************
+
 portNumber = require("./config/config").portNumber;
 mongoDBPort= require("./config/config").mongoDBPort;
 databaseName = require("./config/config").databaseName;
@@ -5,7 +12,7 @@ console.log('databaseName:' + databaseName);
 
 
 // Requires
-var express = require('express')
+// var express = require('express')
 var mongoose = require('mongoose'),
 // Schema = mongoose.Schema,
 autoIncrement = require('mongoose-auto-increment');
@@ -21,6 +28,13 @@ app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, Origin, Accept");
     next();
   });
+
+app.use(express.static(path.join(__dirname, 'public')))
+  .set('views', path.join(__dirname, 'views'))
+  .set('view engine', 'ejs')
+  .get('/', (req, res) => res.render('pages/index'))
+  .get('/cool', (req, res) => res.send(cool()))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`));
 
 // Body Parser
 // parse application/x-www-form-urlencoded
